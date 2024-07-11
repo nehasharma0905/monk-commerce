@@ -1,10 +1,17 @@
-import { useState } from "react";
-import "./App.css";
+import ProductPage from "./ProductPage";
+import monk from "./assets/monk.png";
 
 function App() {
-  const [count, setCount] = useState(0);
 
-  return <></>;
+  return (
+    <div className={'App'}>
+      <nav className="nav">
+        <img src={monk} alt="monk" />
+        <h1 className="nav-title">Monk Upsell & Cross-sell</h1>
+      </nav>
+      <ProductPage/>
+    </div>
+  );
 }
 
 export default App;
